@@ -1,0 +1,198 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    font-family : 'Poppins' , sans-serif;
+}
+
+body{
+    background-image: url("./views/background.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x:hidden;
+}
+
+.logo{
+    min-width: 100%;
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.pokemon{
+    /* border: 5px solid black; */
+    min-width: 100%;
+    height: 480px;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.imageContent{
+    width:600px;
+    height: 420px;
+    /* border:2px solid white; */
+}
+
+.pokemonImage{
+    /* border:5px solid black; */
+    width: 600px;
+    height: 420px;
+    background-image: url("./views/pokeball.png");
+    background-size: 100% 100%;
+    /* border:2px #FCAE1E solid; */
+}
+
+.pokemonImage img{
+    position:relative;
+    top:130px;
+    left:35px;
+    width:200px;
+    height:200px;
+    display:none;
+}
+
+.inputContent{
+    padding: 2px;
+    width:600px;
+    height:45px;
+    /* border:2px solid white; */
+}
+
+.inputForm{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.inputpokemon{
+    display: flex;
+    justify-content: space-between;
+    background-color:#FCAE1E;
+    padding: 6px 10px;
+}
+
+.inputLabel{
+    color:black;
+    padding:2px;
+    font-weight: 600;
+}
+
+.submitAnswer{
+    width:75px;
+    height:30px;
+    font-weight: 600;
+}
+
+.submitAnswer:hover{
+    scale:1.3;
+    background-color:#FCAE1E;
+    color:black;
+    box-shadow: 5px 5px;
+}
+
+.gameStarted{
+    width:75px;
+    height:30px;
+    font-weight: 600;
+}
+
+.gameStarted:hover{
+    scale:1.3;
+    background-color:#FCAE1E;
+    color:black;
+    box-shadow: 5px 5px;
+}
+
+.inputButtons{
+    width: 180px;
+    display:flex;
+    justify-content:space-between;
+}
+
+
+@media  (min-width:308px) and (max-width:1200px) {
+    body{
+        background-image: none;
+        height: 0vh;
+        overflow-x:hidden;
+    }
+    .logoImage{
+        width:100%;
+    }
+    .logo{
+        min-width: 100%;
+        height:50%;
+        display:flex;
+        justify-content: center;
+        justify-items: center;
+        flex-wrap: wrap;
+    }
+    .pokemon{
+        /* border: 5px solid black; */
+        width: 100%;
+        height: 480px;
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+    .imageContent{
+        width:80%;
+        height: 420px;
+        display:flex;
+        flex-direction:column;
+        /* border:2px solid white; */
+    }
+    .pokemonImage{
+        border:5px solid white;
+        width: 100%;
+        height: px;
+        background-image: url("./views/background.png");
+        background-size: 100% 100%;
+        display:flex;
+        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .pokemonImage img{
+        width:200px;
+        height:200px;
+        display:none;
+    }
+    .inputContent{
+        padding: 2px;
+        width:600px;
+        height:45px;
+        /* border:2px solid white; */
+    }
+    .inputForm{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:space-between;
+    }
+    .submitAnswer{
+        width:50%;
+        height:30px;
+        font-weight: 600;
+    }
+    .gameStarted{
+        width:50%;
+        height:30px;
+        font-weight: 600;
+    }
+    .inputButtons{
+        width: 180px;
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items:center;
+    }
+}
